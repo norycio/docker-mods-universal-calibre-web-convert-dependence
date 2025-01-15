@@ -9,7 +9,7 @@ mods:
         args:
           - "-c"
           - |
-            if [ "$DOCKER_MODS" == "ghcr.io/norycio/mods:universal-calibre-web-convert-dependent" ]; then
+            if [ "$DOCKER_MODS" == "ghcr.io/norycio/docker-mods-universal-calibre-web-convert-dependent:universal" ]; then
               # 更新包管理器并安装 Python 包（仅当未安装时）
               if ! pip show PyQtWebEngine > /dev/null 2>&1; then
                 pip install --no-cache-dir PyQtWebEngine
