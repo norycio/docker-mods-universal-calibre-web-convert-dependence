@@ -3,7 +3,7 @@ mods:
   - name: app-plugin-dependent-install
     description: Install Python packages as app dependent
     environment:
-      - DOCKER_MODS=ghcr.io/norycio/mods:universal-calibre-web-convert-dependent
+      - DOCKER_MODS=ghcr.io/norycio/docker-mods-universal-calibre-web-convert-dependent:universal
     commands:
       - command: /bin/sh
         args:
