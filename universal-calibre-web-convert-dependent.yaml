@@ -1,0 +1,18 @@
+version: "1.0"
+mods:
+  - name: app-plugin-dependent-install
+    description: Install Python packages as app dependent
+    environment:
+      - DOCKER_MODS=ghcr.io/norycio/mods:universal-calibre-web-convert-dependent
+    commands:
+      - command: /bin/sh
+        args:
+          - "-c"
+          - |
+            if [ "$DOCKER_MODS" == "ghcr.io/norycio/mods:universal-calibre-web-convert-dependent" ]; then
+              # 更新包管理器并安装 Python 包（仅当未安装时）
+              if ! pip show PyQtWebEngine > /dev/null 2>&1; then
+                pip install --no-cache-dir PyQtWebEngine
+              fi
+            fi
+            #exec "$@"
