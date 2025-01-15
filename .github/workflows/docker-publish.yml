@@ -28,4 +28,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ghcr.io/${{ github.repository }}/mods:universal-calibre-web-convert-dependent
+        tags: ghcr.io/${{ github.repository }}/docker-mods-universal-calibre-web-convert-dependent:universal
