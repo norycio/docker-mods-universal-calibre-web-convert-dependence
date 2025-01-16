@@ -11,7 +11,7 @@ RUN \
 # copy local files
 COPY root/ /root-layer/
 
-RUN chmod+x /root-layer/etc/s6-overlay/s6-rc.d/init-mod-universal-calibre-web-convert-dependence-add-package/run
+#RUN chmod+x /root-layer/etc/s6-overlay/s6-rc.d/init-mod-universal-calibre-web-convert-dependence-add-package/run
 
 ## Single layer deployed image ##
 FROM scratch
