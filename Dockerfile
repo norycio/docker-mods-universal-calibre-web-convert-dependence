@@ -3,4 +3,3 @@
 FROM scratch
 
 COPY root/ /
-RUN chmod+x /etc/s6-overlay/s6-rc.d/init-mod-universal-calibre-web-convert-dependence-add-package/run
