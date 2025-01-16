@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/command/with-contenv bash
 
 # 更新包管理器并安装 Python 包（仅当未安装时）
 if ! pip show PyQtWebEngine > /dev/null 2>&1; then
