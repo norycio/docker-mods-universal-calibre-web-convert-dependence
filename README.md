@@ -5,7 +5,7 @@ This repository contains a Docker mod that enhances `linuxserver/calibre-web` by
 ## Features
 
 - Installs required Python packages using `pip`.
-- Copies plugin files from the mod image to `/app/plugins/`(if you have).
+- Copies plugin files from the mod image to `/root/defaults`(if you have and then you will start from Dockerfile).
 
 ## Usage
 ### When
@@ -16,5 +16,5 @@ To use this mod, simply set the `DOCKER_MODS` environment variable when running 
 ```bash
 docker run -d \
   --name mycontainer \
-  -e DOCKER_MODS=linuxserver/mods:universal-calibre|ghcr.io/norycio/docker-mods-universal-calibre-web-convert-dependent:universal \
+  -e DOCKER_MODS=linuxserver/mods:universal-calibre|ghcr.io/norycio/mods:universal-calibre-web-convert-dependent \
   linuxserver/calibre-web
