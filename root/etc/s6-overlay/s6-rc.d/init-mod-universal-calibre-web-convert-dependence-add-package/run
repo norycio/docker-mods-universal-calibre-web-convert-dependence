@@ -1,7 +1,10 @@
 #!/command/with-contenv bash
 
 # 更新包管理器并安装 Python 包（仅当未安装时）
-if ! pip show PyQtWebEngine > /dev/null 2>&1; then
-  #pip install --no-cache-dir PyQtWebEngine
-  echo PyQtWebEngine >> /mod-pip-packages-to-install.list
-fi
+###
+#if ! pip show PyQtWebEngine > /dev/null 2>&1; then
+#  #pip install --no-cache-dir PyQtWebEngine
+#  echo PyQtWebEngine >> /mod-pip-packages-to-install.list
+#fi
+###
+echo PyQtWebEngine >> /mod-pip-packages-to-install.list
