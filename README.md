@@ -16,5 +16,5 @@ To use this mod, simply set the `DOCKER_MODS` environment variable when running 
 ```bash
 docker run -d \
   --name mycontainer \
-  -e DOCKER_MODS=linuxserver/mods:universal-calibre|ghcr.io/norycio/mods:universal-calibre-web-convert-dependent \
+  -e DOCKER_MODS=linuxserver/mods:universal-calibre|ghcr.io/norycio/universal-calibre-web-convert-dependence:universal \
   linuxserver/calibre-web
